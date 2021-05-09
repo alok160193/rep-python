@@ -1,0 +1,18 @@
+def check_prime(num):
+    flag = 0
+    if (num == 0 or num == 1):
+        print("Neither Prime nor Not Prime")
+    else:
+        if num > 1:
+            #check for factors
+            for i in range(2,num):
+                if (num%i) == 0:
+                    flag = 0
+                    break
+                else:
+                    flag =1
+        if flag == 0:
+            print("Not Prime")
+        else:
+            print("Prime Num")
+                
